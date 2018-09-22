@@ -1,0 +1,7 @@
+problems*.txt
+*.sav
+**/Grade_Classifier_app/**/*.sav
+**/Grade_Classifier_app/**/app_*.py
+**/Grade_Classifier_app/**/problems*.txt
+**/Grade_Classifier_app/**/README_ML.md
+

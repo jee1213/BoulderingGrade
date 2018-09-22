@@ -1,0 +1,94 @@
+<style>
+
+ .main {
+ background-color: rgba(255, 255, 255, 0.5);
+ margin-top: 100px;
+ padding-bottom: 50px;
+ }
+ .main h1 {
+ font-size: 3.5em;
+ font-family: Arial;
+ color: #2E3759;
+ }
+ .main h2 {
+ font-size: 2em;
+ font-family: Arial;
+ color: #2E3759;
+ }
+ .main h3 {
+ font-size: 2em;
+ font-family: Arial;
+ color: #2E3759;
+ }
+ .main p {
+ font-size:1em;
+ font-family: Arial;
+ color: #2E3759;
+ }
+
+</style>
+
+
+
+    <title>Moonboard Grade Predictor</title>
+
+  </head>
+  <body>
+
+<!--<div class="main">
+  <div style="text-align:center">
+    <br><br>
+  <img src="static/img/W_logo.png" style="width: 15%">
+    <div class="starter-template">
+
+
+    </div>
+  <br><br>
+--!>
+<!-- This sends user to recommendations page after filling out the survey   -->
+<form action='/return_grade', method='POST'>
+
+<!-- My first question, input class="input" means a text box -->
+ <!-- <div><h3>What is your budget?</h3></div>
+  <p>
+    <input class="input" type="number" name="total_price">
+  </p>
+  <br><br>
+--!>
+ <!-- <div><h3>What services do you require?</h3></div>
+  <div class="input"> --!>
+    <!-- There are a number of input types to customize user input -->
+ <!--   <input type="checkbox" name="ceremony_decor" value="ceremony_decor"> <b>Ceremony Decor</b><br>
+    <input type="checkbox" name="reception_decor" value="reception_decor"> <b>Reception Decor</b><br>
+    <input type="checkbox" name="handhelds" value="handhelds"> <b>Handhelds</b><br>
+  </div>
+  <br><br>
+--!>
+  <div><h3>Please provide the comma-separated coordinates of the problem</h3></div>
+  <p>
+    <input class="input" type="text" name="hold_coordinates">
+  </p>
+  <br><br>
+<!--
+  <div ><h3>Where is your wedding?</h3></div>
+  <select name="location" id="location" class="selectpicker form-control">
+      <option selected="selected" value = ''>Select Location</option>
+      <option value="location_Boulder">Boulder</option>
+      <option value="location_Denver">Denver</option>
+      <option value="location_FootHills">Foothills</option>
+      <option value="location_Mountain_town_not_listed">Mountain Town Not Listed</option>
+      <option value="location_Other">Other</option>
+      <option value="location_Summit_County">Summit County</option>
+  </select>
+  <br><br>
+--!>
+
+
+  <br><br><br>
+  <button type="submit">Find the Grade!</button>
+</form>
+
+
+  </div>
+</div>
+</body>
