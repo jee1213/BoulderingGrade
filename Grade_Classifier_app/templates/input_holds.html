@@ -1,3 +1,4 @@
+<head>
 <style>
 
  .main {
@@ -25,10 +26,115 @@
  font-family: Arial;
  color: #2E3759;
  }
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
 
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	.responsive-table-input-matrix {
+		display: block;
+		position: relative;
+		width: 100%;
+
+		&:after {
+			clear: both;
+			content: '';
+			display: block;
+			font-size: 0;
+			height: 0;
+			visibility: hidden;
+		}
+
+		tbody {
+			display: block;
+			overflow-x: auto;
+			position: relative;
+			white-space: nowrap;
+			width: auto;
+
+
+			tr {
+				display: inline-block;
+				vertical-align: top;
+
+				td {
+					display: block;
+					text-align: center;
+
+					&:first-child {
+						text-align: left;
+					}
+				}
+			}
+		}
+
+		thead {
+			display: block;
+			float: left;
+			margin-right: 10px;
+
+			&:after {
+				clear: both;
+				content: "";
+				display: block;
+				font-size: 0;
+				height: 0;
+				visibility: hidden;
+			}
+
+			th:first-of-type {
+				height: 1.4em;
+			}
+
+			th {
+				display: block;
+				text-align: right;
+
+				&:first-child {
+					text-align: right;
+				}
+			}
+		}
+	}
+}
 </style>
-
-
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ----------!>
 
     <title>Moonboard Grade Predictor</title>
 
@@ -69,6 +175,284 @@
     <input class="input" type="text" name="hold_coordinates">
   </p>
   <br><br>
+
+<h1>Responsive table of input-checkbox-matrix type</h1>
+
+
+<h3>Permissions Table</h3>
+<table class="responsive-table-input-matrix">
+		<thead>
+		<tr>
+			<th></th>
+			<th>A</th>
+			<th>B</th>
+			<th>C</th>
+			<th>D</th>
+			<th>E</th>
+			<th>F</th>
+			<th>G</th>
+			<th>H</th>
+			<th>I</th>
+			<th>J</th>
+			<th>K</th>
+		</tr>
+		</thead>
+		<tbody>
+
+		<tr>
+			<td>18</td>
+			<td><input type="checkbox", name = "check", value = A18></td> 
+			<td><input type="checkbox", name = "check", value = B18></td> 
+			<td><input type="checkbox", name = "check", value = C18></td> 
+			<td><input type="checkbox", name = "check", value = D18></td> 
+			<td><input type="checkbox", name = "check", value = E18></td> 
+			<td><input type="checkbox", name = "check", value = F18></td> 
+			<td><input type="checkbox", name = "check", value = G18></td>
+			<td><input type="checkbox", name = "check", value = H18></td>
+			<td><input type="checkbox", name = "check", value = I18></td>
+			<td><input type="checkbox", name = "check", value = J18></td>
+			<td><input type="checkbox", name = "check", value = K18></td>
+		</tr>
+		<tr>
+			<td>17</td>
+			<td><input type="checkbox", name = "check", value = A17></td> 
+			<td><input type="checkbox", name = "check", value = B17></td> 
+			<td><input type="checkbox", name = "check", value = C17></td> 
+			<td><input type="checkbox", name = "check", value = D17></td> 
+			<td><input type="checkbox", name = "check", value = E17></td> 
+			<td><input type="checkbox", name = "check", value = F17></td> 
+			<td><input type="checkbox", name = "check", value = G17></td>
+			<td><input type="checkbox", name = "check", value = H17></td>
+			<td><input type="checkbox", name = "check", value = I17></td>
+			<td><input type="checkbox", name = "check", value = J17></td>
+			<td><input type="checkbox", name = "check", value = K17></td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td><input type="checkbox", name = "check", value = A16></td> 
+			<td><input type="checkbox", name = "check", value = B16></td> 
+			<td><input type="checkbox", name = "check", value = C16></td> 
+			<td><input type="checkbox", name = "check", value = D16></td> 
+			<td><input type="checkbox", name = "check", value = E16></td> 
+			<td><input type="checkbox", name = "check", value = F16></td> 
+			<td><input type="checkbox", name = "check", value = G16></td>
+			<td><input type="checkbox", name = "check", value = H16></td>
+			<td><input type="checkbox", name = "check", value = I16></td>
+			<td><input type="checkbox", name = "check", value = J16></td>
+			<td><input type="checkbox", name = "check", value = K16></td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td><input type="checkbox", name = "check", value = A15></td> 
+			<td><input type="checkbox", name = "check", value = B15></td> 
+			<td><input type="checkbox", name = "check", value = C15></td> 
+			<td><input type="checkbox", name = "check", value = D15></td> 
+			<td><input type="checkbox", name = "check", value = E15></td> 
+			<td><input type="checkbox", name = "check", value = F15></td> 
+			<td><input type="checkbox", name = "check", value = G15></td>
+			<td><input type="checkbox", name = "check", value = H15></td>
+			<td><input type="checkbox", name = "check", value = I15></td>
+			<td><input type="checkbox", name = "check", value = J15></td>
+			<td><input type="checkbox", name = "check", value = K15></td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td><input type="checkbox", name = "check", value = A14></td> 
+			<td><input type="checkbox", name = "check", value = B14></td> 
+			<td><input type="checkbox", name = "check", value = C14></td> 
+			<td><input type="checkbox", name = "check", value = D14></td> 
+			<td><input type="checkbox", name = "check", value = E14></td> 
+			<td><input type="checkbox", name = "check", value = F14></td> 
+			<td><input type="checkbox", name = "check", value = G14></td>
+			<td><input type="checkbox", name = "check", value = H14></td>
+			<td><input type="checkbox", name = "check", value = I14></td>
+			<td><input type="checkbox", name = "check", value = J14></td>
+			<td><input type="checkbox", name = "check", value = K14></td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td><input type="checkbox", name = "check", value = A13></td> 
+			<td><input type="checkbox", name = "check", value = B13></td> 
+			<td><input type="checkbox", name = "check", value = C13></td> 
+			<td><input type="checkbox", name = "check", value = D13></td> 
+			<td><input type="checkbox", name = "check", value = E13></td> 
+			<td><input type="checkbox", name = "check", value = F13></td> 
+			<td><input type="checkbox", name = "check", value = G13></td>
+			<td><input type="checkbox", name = "check", value = H13></td>
+			<td><input type="checkbox", name = "check", value = I13></td>
+			<td><input type="checkbox", name = "check", value = J13></td>
+			<td><input type="checkbox", name = "check", value = K13></td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td><input type="checkbox", name = "check", value = A12></td> 
+			<td><input type="checkbox", name = "check", value = B12></td> 
+			<td><input type="checkbox", name = "check", value = C12></td> 
+			<td><input type="checkbox", name = "check", value = D12></td> 
+			<td><input type="checkbox", name = "check", value = E12></td> 
+			<td><input type="checkbox", name = "check", value = F12></td> 
+			<td><input type="checkbox", name = "check", value = G12></td>
+			<td><input type="checkbox", name = "check", value = H12></td>
+			<td><input type="checkbox", name = "check", value = I12></td>
+			<td><input type="checkbox", name = "check", value = J12></td>
+			<td><input type="checkbox", name = "check", value = K12></td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td><input type="checkbox", name = "check", value = A11></td> 
+			<td><input type="checkbox", name = "check", value = B11></td> 
+			<td><input type="checkbox", name = "check", value = C11></td> 
+			<td><input type="checkbox", name = "check", value = D11></td> 
+			<td><input type="checkbox", name = "check", value = E11></td> 
+			<td><input type="checkbox", name = "check", value = F11></td> 
+			<td><input type="checkbox", name = "check", value = G11></td>
+			<td><input type="checkbox", name = "check", value = H11></td>
+			<td><input type="checkbox", name = "check", value = I11></td>
+			<td><input type="checkbox", name = "check", value = J11></td>
+			<td><input type="checkbox", name = "check", value = K11></td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td><input type="checkbox", name = "check", value = A10></td> 
+			<td><input type="checkbox", name = "check", value = B10></td> 
+			<td><input type="checkbox", name = "check", value = C10></td> 
+			<td><input type="checkbox", name = "check", value = D10></td> 
+			<td><input type="checkbox", name = "check", value = E10></td> 
+			<td><input type="checkbox", name = "check", value = F10></td> 
+			<td><input type="checkbox", name = "check", value = G10></td>
+			<td><input type="checkbox", name = "check", value = H10></td>
+			<td><input type="checkbox", name = "check", value = I10></td>
+			<td><input type="checkbox", name = "check", value = J10></td>
+			<td><input type="checkbox", name = "check", value = K10></td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td><input type="checkbox", name = "check", value = A9></td> 
+			<td><input type="checkbox", name = "check", value = B9></td> 
+			<td><input type="checkbox", name = "check", value = C9></td> 
+			<td><input type="checkbox", name = "check", value = D9></td> 
+			<td><input type="checkbox", name = "check", value = E9></td> 
+			<td><input type="checkbox", name = "check", value = F9></td> 
+			<td><input type="checkbox", name = "check", value = G9></td>
+			<td><input type="checkbox", name = "check", value = H9></td>
+			<td><input type="checkbox", name = "check", value = I9></td>
+			<td><input type="checkbox", name = "check", value = J9></td>
+			<td><input type="checkbox", name = "check", value = K9></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td><input type="checkbox", name = "check", value = A8></td> 
+			<td><input type="checkbox", name = "check", value = B8></td> 
+			<td><input type="checkbox", name = "check", value = C8></td> 
+			<td><input type="checkbox", name = "check", value = D8></td> 
+			<td><input type="checkbox", name = "check", value = E8></td> 
+			<td><input type="checkbox", name = "check", value = F8></td> 
+			<td><input type="checkbox", name = "check", value = G8></td>
+			<td><input type="checkbox", name = "check", value = H8></td>
+			<td><input type="checkbox", name = "check", value = I8></td>
+			<td><input type="checkbox", name = "check", value = J8></td>
+			<td><input type="checkbox", name = "check", value = K8></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td><input type="checkbox", name = "check", value = A7></td> 
+			<td><input type="checkbox", name = "check", value = B7></td> 
+			<td><input type="checkbox", name = "check", value = C7></td> 
+			<td><input type="checkbox", name = "check", value = D7></td> 
+			<td><input type="checkbox", name = "check", value = E7></td> 
+			<td><input type="checkbox", name = "check", value = F7></td> 
+			<td><input type="checkbox", name = "check", value = G7></td>
+			<td><input type="checkbox", name = "check", value = H7></td>
+			<td><input type="checkbox", name = "check", value = I7></td>
+			<td><input type="checkbox", name = "check", value = J7></td>
+			<td><input type="checkbox", name = "check", value = K7></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td><input type="checkbox", name = "check", value = A6></td> 
+			<td><input type="checkbox", name = "check", value = B6></td> 
+			<td><input type="checkbox", name = "check", value = C6></td> 
+			<td><input type="checkbox", name = "check", value = D6></td> 
+			<td><input type="checkbox", name = "check", value = E6></td> 
+			<td><input type="checkbox", name = "check", value = F6></td> 
+			<td><input type="checkbox", name = "check", value = G6></td>
+			<td><input type="checkbox", name = "check", value = H6></td>
+			<td><input type="checkbox", name = "check", value = I6></td>
+			<td><input type="checkbox", name = "check", value = J6></td>
+			<td><input type="checkbox", name = "check", value = K6></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td><input type="checkbox", name = "check", value = A5></td> 
+			<td><input type="checkbox", name = "check", value = B5></td> 
+			<td><input type="checkbox", name = "check", value = C5></td> 
+			<td><input type="checkbox", name = "check", value = D5></td> 
+			<td><input type="checkbox", name = "check", value = E5></td> 
+			<td><input type="checkbox", name = "check", value = F5></td> 
+			<td><input type="checkbox", name = "check", value = G5></td>
+			<td><input type="checkbox", name = "check", value = H5></td>
+			<td><input type="checkbox", name = "check", value = I5></td>
+			<td><input type="checkbox", name = "check", value = J5></td>
+			<td><input type="checkbox", name = "check", value = K5></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td><input type="checkbox", name = "check", value = A4></td> 
+			<td><input type="checkbox", name = "check", value = B4></td> 
+			<td><input type="checkbox", name = "check", value = C4></td> 
+			<td><input type="checkbox", name = "check", value = D4></td> 
+			<td><input type="checkbox", name = "check", value = E4></td> 
+			<td><input type="checkbox", name = "check", value = F4></td> 
+			<td><input type="checkbox", name = "check", value = G4></td>
+			<td><input type="checkbox", name = "check", value = H4></td>
+			<td><input type="checkbox", name = "check", value = I4></td>
+			<td><input type="checkbox", name = "check", value = J4></td>
+			<td><input type="checkbox", name = "check", value = K4></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td><input type="checkbox", name = "check", value = A3></td> 
+			<td><input type="checkbox", name = "check", value = B3></td> 
+			<td><input type="checkbox", name = "check", value = C3></td> 
+			<td><input type="checkbox", name = "check", value = D3></td> 
+			<td><input type="checkbox", name = "check", value = E3></td> 
+			<td><input type="checkbox", name = "check", value = F3></td> 
+			<td><input type="checkbox", name = "check", value = G3></td>
+			<td><input type="checkbox", name = "check", value = H3></td>
+			<td><input type="checkbox", name = "check", value = I3></td>
+			<td><input type="checkbox", name = "check", value = J3></td>
+			<td><input type="checkbox", name = "check", value = K3></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td><input type="checkbox", name = "check", value = A2></td> 
+			<td><input type="checkbox", name = "check", value = B2></td> 
+			<td><input type="checkbox", name = "check", value = C2></td> 
+			<td><input type="checkbox", name = "check", value = D2></td> 
+			<td><input type="checkbox", name = "check", value = E2></td> 
+			<td><input type="checkbox", name = "check", value = F2></td> 
+			<td><input type="checkbox", name = "check", value = G2></td>
+			<td><input type="checkbox", name = "check", value = H2></td>
+			<td><input type="checkbox", name = "check", value = I2></td>
+			<td><input type="checkbox", name = "check", value = J2></td>
+			<td><input type="checkbox", name = "check", value = K2></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td><input type="checkbox", name = "check", value = A1></td> 
+			<td><input type="checkbox", name = "check", value = B1></td> 
+			<td><input type="checkbox", name = "check", value = C1></td> 
+			<td><input type="checkbox", name = "check", value = D1></td> 
+			<td><input type="checkbox", name = "check", value = E1></td> 
+			<td><input type="checkbox", name = "check", value = F1></td> 
+			<td><input type="checkbox", name = "check", value = G1></td>
+			<td><input type="checkbox", name = "check", value = H1></td>
+			<td><input type="checkbox", name = "check", value = I1></td>
+			<td><input type="checkbox", name = "check", value = J1></td>
+			<td><input type="checkbox", name = "check", value = K1></td>
+		</tr>
+		</tbody>
+	</table>
 <!--
   <div ><h3>Where is your wedding?</h3></div>
   <select name="location" id="location" class="selectpicker form-control">
@@ -82,7 +466,52 @@
   </select>
   <br><br>
 --!>
+<!--
+<div class="container">
 
+	<div class="well well-sm text-center">
+
+		<h3>Checkbox</h3>
+		
+		<div class="btn-group" data-toggle="buttons">
+			
+			<label class="btn btn-success active">
+				<input type="checkbox" autocomplete="off" checked>
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>
+
+			<label class="btn btn-primary">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		
+			<label class="btn btn-info">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		
+			<label class="btn btn-default">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+
+			<label class="btn btn-warning">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		
+			<label class="btn btn-danger">
+				<input type="checkbox" autocomplete="off">
+				<span class="glyphicon glyphicon-ok"></span>
+			</label>			
+		
+		</div>
+
+	</div>
+
+</div>
+
+--!>
 
   <br><br><br>
   <button type="submit">Find the Grade!</button>

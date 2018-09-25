@@ -14,12 +14,15 @@ Each bouldering problem has information on<br>
 -Route setter<br>
 -Method (restrictions on how to use footholds)<br>
 -Number of repeats by other users<br>
-that we are going to use. 
+that we are going to use.<br> 
 The primary information that defines the Grade of the problem comes from the Moves.
 We encode the information one-hot style, and add a few more features such as
 -length (the number of holds used in the problem<br>
 -l, r (the x-coordinate of leftmost / rightmost hold, respectively)<br>
--width (r-l)
+-width (r-l)<br>
+-path (minimum distance from the start to the end hold while including all the other holds in the problem)<br>
+-std (standard deviation of the path)<br>
+which later turns out to be the most important features that defines the grade.
 # Code
-The data is read and model is trained in ipython notebook MoonBoard_GradePrediction.ipynb. When the model is returned, it is saved as RF_model.sav. Then Grads_Classifier_app/app.py creates a locally-hosted web app, where three html pages are handled via Flask..
+The data is read and model is trained in ipython notebook MoonBoard_GradePrediction.ipynb. When the model is returned, it is saved as RF_model.sav. Then Grads_Classifier_app/app.py creates a locally-hosted web app, where three html pages are handled via Flask. 
 

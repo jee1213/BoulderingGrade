@@ -69,8 +69,9 @@ def input_to_output_app():
 		return prob
 
     # take input from recommendation.html
-	s = str(request.form['hold_coordinates'])
-	lst = s.strip().split(',')
+#	s = str(request.form['hold_coordinates'])
+	lst = (request.form.getlist('check')) 
+	#lst = s.strip().split(',')
 	cos_sim = input_to_output(lst)
     # plot can be generated, saved as a file and loaded to html
     #return [rf2.predict(h_enc),rf2.predict_proba(h_enc)]
