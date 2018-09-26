@@ -72,7 +72,7 @@ def input_to_output_app():
 #	s = str(request.form['hold_coordinates'])
 	lst = (request.form.getlist('check')) 
 	#lst = s.strip().split(',')
-	cos_sim = input_to_output(lst)
+	cos_sim = int(input_to_output(lst))
     # plot can be generated, saved as a file and loaded to html
     #return [rf2.predict(h_enc),rf2.predict_proba(h_enc)]
     #return render_template('recommendations.html', cos_sims = cos_sims, florist_info = florist_info)

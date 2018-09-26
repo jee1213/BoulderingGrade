@@ -25,7 +25,11 @@
  font-family: Arial;
  color: #2E3759;
  }
-
+body {
+   background-image: url("static/img/output.jpg");
+   background-color: #cccccc;
+   background-size: cover;
+}
 </style>
 
 
@@ -39,7 +43,7 @@
 
 <br><br>
 <h3>Thank you for waiting!</h3>
-<p>Grade: {{ cos_sim }}</p>
+<p>Grade: V{{ cos_sim }}</p>
 <!-- This is the important part!!
 The following code is basically what reads your data and runs your function from app.py
 Don't forget the {% for x in whatever %} if you use a for loop and end the for loop with {% endfor %} -->
