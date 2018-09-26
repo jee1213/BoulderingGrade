@@ -22,7 +22,6 @@ def input_to_output_app():
 	import pickle
 	filename = 'RF_imbmodel.sav'
 	loaded_model = pickle.load(open(filename, 'rb'))
-	import seaborn as sns
 	font = ['5+','6A','6A+','6B','6B+','6C','6C+','7A','7A+','7B','7B+','7C','7C+','8A','8A+','8B','8B+']
 	vgrd = [2,3,3,4,4,5,5,6,7,8,8,9,10,11,12,13,14]
 	grade_conversion = dict(zip(font,vgrd))
