@@ -42,8 +42,12 @@ body {
   <div class="starter-template">
 
 <br><br>
-<h3>Thank you for waiting!</h3>
+<h3>Result of the user input</h3>
 <p>Grade: V{{ cos_sim }}</p>
+<h3>Similar route in the database</h3>
+<p>Problem: {{ holds }}</p>
+<p>Routesetter: {{ setter }}</p>
+<p>Grade: V{{ Grade }}</p>
 <!-- This is the important part!!
 The following code is basically what reads your data and runs your function from app.py
 Don't forget the {% for x in whatever %} if you use a for loop and end the for loop with {% endfor %} -->

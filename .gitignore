@@ -1,7 +1,9 @@
 problems*.txt
 *.sav
+*.pickle
 **/Grade_Classifier_app/**/*.sav
 **/Grade_Classifier_app/**/app_*.py
 **/Grade_Classifier_app/**/problems*.txt
 **/Grade_Classifier_app/**/README_ML.md
+**/Grade_Classifier_app/**/*.pickle
 
